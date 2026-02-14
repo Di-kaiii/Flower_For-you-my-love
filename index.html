@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower for you!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page1" class="container active">
+        <div class="flower-box">
+            <div class="bouquet">
+                <div class="tulip t1"><div class="head"></div><div class="stem"></div></div>
+                <div class="tulip t2"><div class="head"></div><div class="stem"></div></div>
+                <div class="tulip t3"><div class="head"></div><div class="stem"></div></div>
+            </div>
+            <h1 class="title">Flower for you my love🌷</h1>
+        </div>
+        
+        <div class="nav-arrow" onclick="goToPage(2)">
+            <span>Discover the messages</span>
+            <div class="arrow-icon">→</div>
+        </div>
+    </div>
+
+    <div id="page2" class="container hidden">
+        <h2 class="instruction-text">Pick a petal...</h2>
+        
+        <div class="petal-garden">
+            <div class="petal" onclick="revealMessage(0)"></div>
+            <div class="petal" onclick="revealMessage(1)"></div>
+            <div class="petal" onclick="revealMessage(2)"></div>
+            <div class="petal" onclick="revealMessage(3)"></div>
+            <div class="petal" onclick="revealMessage(4)"></div>
+        </div>
+        
+        <div id="message-display" class="message-card">
+            <p id="message-text">Click a petal above to read the note.</p>
+        </div>
+
+        <button class="back-btn" onclick="goToPage(1)">← Back to Bouquet</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
